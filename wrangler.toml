@@ -1,4 +1,4 @@
-name = "openai-proxy"
+name = "marouane"
 compatibility_flags = [ "nodejs_compat" ]
 compatibility_date= "2024-11-01"
 main= "src/index.ts"
