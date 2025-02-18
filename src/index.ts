@@ -1,18 +1,3 @@
-export default {
-  async fetch(request, env) {
-    const inputs = {
-      prompt: "cyberpunk cat",
-    };
+import dns from 'node:dns';
 
-    const response = await env.AI.run(
-      "@cf/stabilityai/stable-diffusion-xl-base-1.0",
-      inputs,
-    );
-
-    return new Response(response, {
-      headers: {
-        "content-type": "image/png",
-      },
-    });
-  },
-} satisfies ExportedHandler<Env>;
+let responese = await dns.promises.resolve4('cloudflare.com', 'NS');
