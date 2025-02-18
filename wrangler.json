@@ -1,6 +1,8 @@
 {
   "compatibility_date": "2024-11-01",
-  "compatibility_flags" = [ "nodejs_compat" ],
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
   "main": "src/index.ts",
   "name": "winter-salad-f906",
   "upload_source_maps": true,
